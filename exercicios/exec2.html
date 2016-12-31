@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercicio 2</title>
+  </head>
+  <body>
+
+    <script>
+    let numeros = [3,2,11,20,8,7];
+
+    // Exemplo de map: let novosNumeros = numeros.map(function(item){return item +10});
+    numeros = numeros.map(function(item){
+      if (item % 2 != 0) {
+        return item * item;
+      } return item;
+    });
+
+    console.log(numeros);
+
+    </script>
+  </body>
+</html>
