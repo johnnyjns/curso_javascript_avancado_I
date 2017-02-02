@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Capitulo 04 - Exercicio j</title>
+  </head>
+  <body>
+    <script>
+        class Codificador {
+
+            constructor(frase){
+
+                this.frase = frase;
+            }
+
+            _trocaLetrasFrase(frase){
+
+                return frase.replace(/\W{0}(a)/g, '4').replace(/\W{0}(S)/g, '5').replace(/\W{0}(s)/g, '5').replace(/\W{0}(B)/g, '3');
+            }
+
+            get frase(){
+
+                return this.frase;
+            }
+        }
+    </script>
+
+  </body>
+</html>
