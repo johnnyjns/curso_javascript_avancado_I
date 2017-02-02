@@ -9,12 +9,12 @@ function validaCodigo(codigo) {
     // que recebe o alvo do teste, retornando true
     // se passou, e false se falhou
     if(expressao.test(codigo)) {
-          alert('Código válido!');
+          console.log('Código válido!');
       } else {
-          alert('Código inválido');
+          console.log('Código inválido');
       }
 
+      validaCodigo('GWZ-JJ-12'); // válido
+      validaCodigo('1X1-JJ-12'); // inválido
 }
-
-validaCodigo('GWZ-JJ-12'); // válido
-validaCodigo('1X1-JJ-12'); // inválido
+// console.log();
