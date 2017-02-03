@@ -10,18 +10,26 @@
 
             constructor(frase){
 
-                this.frase = frase;
+                if(!this._trocaLetrasFrase(frase)) throw new Error('Algo de errado aconteceu!');
+                this._frase = frase;
             }
 
             _trocaLetrasFrase(frase){
 
-                return frase.replace(/\W{0}(a)/g, '4').replace(/\W{0}(S)/g, '5').replace(/\W{0}(s)/g, '5').replace(/\W{0}(B)/g, '3l');
+                return frase.replace(/\W{0}(a)/g, '4').replace(/\W{0}(S)/g, '5').replace(/\W{0}(s)/g, '5').replace(/\W{0}(B)/g, '3');
             }
 
             get frase(){
 
-                return this.frase;
+                return this._frase;
             }
+
+            let fraseOriginal = "Teste";
+            console.log(fraseOriginal);
+
+            let fraseCodificada = new Codificador(fraseOriginal);
+            console.log(fraseCodificada);
+
         }
     </script>
 
