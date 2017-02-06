@@ -10,13 +10,15 @@
 
             constructor(frase){
 
-                if(!this._trocaLetrasFrase(frase)) throw new Error('Algo de errado aconteceu!');
+                // if(!this._trocaLetrasFrase(frase)) throw new Error('Algo de errado aconteceu!');
+                this._trocaLetrasFrase(frase);
                 this._frase = frase;
             }
 
             _trocaLetrasFrase(frase){
 
-                return frase = frase.replace(/\W{0}(a)/g, 4).replace(/\W{0}(S)/g, 5).replace(/\W{0}(s)/g, 5).replace(/\W{0}(B)/g, 3);
+                // return frase.replace(/\W{0}(a)/g, 4).replace(/\W{0}(S)/g, 5).replace(/\W{0}(s)/g, 5).replace(/\W{0}(B)/g, 3);
+                return frase.replace(/a/g, "4");
             }
 
             get frase(){
@@ -30,7 +32,11 @@
         console.log(fraseOriginal);
 
         let fraseCodificada = new Codificador(fraseOriginal);
-        console.log(fraseCodificada);
+        console.log(fraseCodificada.frase);
+
+        // var str = "um cachorro, um gato, um rato";
+        // var todas = str.replace(/um/g, "O"); // o cachorro, o gato, o rato
+        // console.log(todas);
     </script>
 
   </body>
