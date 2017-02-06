@@ -16,7 +16,7 @@
 
             _trocaLetrasFrase(frase){
 
-                return frase.replace(/\W{0}(a)/g, '4').replace(/\W{0}(S)/g, '5').replace(/\W{0}(s)/g, '5').replace(/\W{0}(B)/g, '3');
+                return frase = frase.replace(/\W{0}(a)/g, 4).replace(/\W{0}(S)/g, 5).replace(/\W{0}(s)/g, 5).replace(/\W{0}(B)/g, 3);
             }
 
             get frase(){
@@ -24,13 +24,13 @@
                 return this._frase;
             }
 
-            let fraseOriginal = "Teste";
-            console.log(fraseOriginal);
-
-            let fraseCodificada = new Codificador(fraseOriginal);
-            console.log(fraseCodificada);
 
         }
+        let fraseOriginal = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget arcu vitae justo ullamcorper tempor.";
+        console.log(fraseOriginal);
+
+        let fraseCodificada = new Codificador(fraseOriginal);
+        console.log(fraseCodificada);
     </script>
 
   </body>
